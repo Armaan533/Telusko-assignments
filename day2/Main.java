@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.stream.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,13 +35,30 @@ public class Main {
 //        Product p = service.getProduct("Logi Mouse");
 //        System.out.println(p);
 
-        System.out.println("==============================================");
-        System.out.println("a Particular text");
+        // System.out.println("==============================================");
+        // System.out.println("a Particular text");
 
-        List<Product> prods = service.getProductWithText("black");
-        for(Product product : prods){
-            System.out.println(product);
-        }
+        // List<Product> prods = service.getProductWithText("black");
+        // for(Product product : prods){
+        //     System.out.println(product);
+        // }
+
+        // System.out.println("==============================================");
+        // System.out.println("A Particular Place");
+
+        // List<Product> prods = service.getProductWithPlace("black");
+        // //Use of Stream API
+        // Stream<Product> data = prods.stream();
+        // data.forEach(n -> System.out.println(n));
+        // // Stream can be used only once and is useful for avoiding data leakages
+
+        System.out.println("==============================================");
+        System.out.println("A Particular Warranty");
+
+        List<Product> prods = service.getProductWithWarranty(2020);
+        // Use of Stream API
+        Stream<Product> data = prods.stream();
+        data.forEach(n -> System.out.println(n));
 
     }
 }
