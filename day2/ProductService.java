@@ -38,6 +38,7 @@ public class ProductService {
     }
 
     // Assignment-2 Part-1
+    // It is fairly similar to the above methods so I don't think it needs any explanation and same goes for part 2
 
     public List<Product> getProductWithPlace(String text) {
         String str = text.toLowerCase();
