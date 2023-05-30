@@ -1,0 +1,6 @@
+spring:
+  datasource:
+#    driverClassName: org.postgresql
+    url: jdbc:postgresql://localhost:5432/telusko_project
+    username: postgres
+    password: 0786
